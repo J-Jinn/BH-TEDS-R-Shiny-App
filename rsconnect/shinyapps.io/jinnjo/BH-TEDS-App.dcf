@@ -1,0 +1,13 @@
+name: BH-TEDS-App
+title: BH-TEDS-App
+username:
+account: jinnjo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 7517474
+bundleId: 6482573
+url: https://jinnjo.shinyapps.io/BH-TEDS-App/
+when: 1667780887.25047
+lastSyncTime: 1667780887.25048
+asMultiple: FALSE
+asStatic: FALSE
