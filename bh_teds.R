@@ -160,8 +160,8 @@ visualize_demographics <- function(data = NULL, labels_data = NULL, county_filte
       state_stats$var1 <- factor(state_stats$var1, levels = c(drug.list, 'Other'))
       stats_vars_sym <- sym("var1")
     }
-    else if(stats_vars_sym == "daystx2") {
-      daystx2.list <- c('Within 7 days', 'Within 14 days', 'Within 30 days', 'More than 30 days')
+    else if(stats_vars_sym == "daystx2") { # Redirected. 
+      daystx2.list <- c('Within 7 days', 'Within 14 days', 'Within 30 days', 'More than 30 days') # TODO: remove this line
       my_state_data <- data %>% 
         mutate(daystx2 = ifelse(daystx < 8, "Within 7 days", 
                                 ifelse(daystx < 15, "Within 14 days",
@@ -184,7 +184,7 @@ visualize_demographics <- function(data = NULL, labels_data = NULL, county_filte
       my_state_data <- data %>% filter(ethnic != 97)
       my_county_data <- my_state_data %>% filter(county == county_filter)
     }
-    else if(stats_vars_sym == "educatGrp") {
+    else if(stats_vars_sym == "educatGrp") { # Redirected. 
       educ.list <- c('Grade 12 or GED', ' Vocational School', ' 1 Year of College', ' 2 Years of College', 
                      '3 Years of College', '4 Years of College or BS BA', 'Grad School')
       fun <- function(z) {
@@ -195,7 +195,7 @@ visualize_demographics <- function(data = NULL, labels_data = NULL, county_filte
       my_state_data$educatGrp <- fct_relabel(factor(my_state_data$educat), fun)
       my_county_data <- my_state_data %>% filter(county == county_filter)
     }
-    else if(stats_vars_sym == "income2") {
+    else if(stats_vars_sym == "income2") { # Redirected. 
       income.list <- c('Less than \n $10,000', '$10,000 to \n $19,999', '$20,000 to \n $29,999', 
                        '$30,000 to \n $39,999', '$40,000 to \n $49,999', '$50,000 \n or more')
       my_state_data <- data %>% 
