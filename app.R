@@ -82,6 +82,7 @@ library(shinyjs) # Enable additional javascript functionality in R.
 library(dplyr) # Data manipulation.
 library(tidyr)
 library(ggplot2) # Plotting.
+library(gridExtra) # For arranging layouts for multiple lots. 
 
 library(foreign) # Read SPSS files.
 library(forcats) # For fct_rev(). 
